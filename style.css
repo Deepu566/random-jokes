@@ -3,11 +3,10 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    background-color: black;
 }
 
 .joke {
-    min-height: 200px;
+    /* min-height: 200px; */
     font-size: 30px;
 }
 
@@ -18,10 +17,9 @@ h1 {
 .jokecontainer {
     display: flex;
     flex-direction: column;
-    border: 1px black curvy;
-    background-color: pink;
+    /* border: 1px black curvy; */
+    /* background-color: pink; */
     padding: 5px;
-    width: 500px;
     text-align: center;
     font-weight: 600;
 }
@@ -36,4 +34,40 @@ h1 {
     text-transform: uppercase;
     border-radius: 10px;
     font-weight: 600;
+}
+
+.question {
+    margin-bottom: 150px;
+}
+
+.answer {
+    color: white;
+    padding: 0 50px;
+}
+
+
+@media screen and (max-width:500px) {
+    body {
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: rgb(131, 126, 127);
+    }
+
+    h1 {
+        color: blue;
+    }
+
+    .jokecontainer {
+        width: 100%;
+        height: 100%;
+        position: relative;
+    }
+
+    .nextJoke {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
 }

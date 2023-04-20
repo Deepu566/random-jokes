@@ -1,7 +1,9 @@
 const joke = document.querySelector(".joke");
 const nextJoke = document.querySelector(".nextJoke")
+const answer = document.querySelector(".answer")
+const question = document.querySelector(".question")
 
-let newJoke;
+
 
 const getjokes = async () => {
     const res = await fetch("https://icanhazdadjoke.com", {
@@ -11,8 +13,9 @@ const getjokes = async () => {
         }
     });
     let res1 = await res.json();
-    newJoke = res1.joke;
-    joke.textContent = newJoke
+    let newJoke = res1.joke.split("?");
+    question.textContent = newJoke[1] ? newJoke[0] + "?" : newJoke[0];
+    answer.textContent = newJoke[1]
 }
 getjokes();
 

@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+}
+
+.joke {
+    min-height: 200px;
+    font-size: 30px;
+}
+
+h1 {
+    color: white;
+}
+
+.jokecontainer {
+    display: flex;
+    flex-direction: column;
+    border: 1px black curvy;
+    background-color: pink;
+    padding: 5px;
+    width: 500px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.nextJoke {
+    background-color: blue;
+    padding: 10px 5px;
+    cursor: pointer;
+    color: whitesmoke;
+    font-size: 20px;
+    word-spacing: 10px;
+    text-transform: uppercase;
+    border-radius: 10px;
+    font-weight: 600;
+}

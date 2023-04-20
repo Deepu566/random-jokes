@@ -3,6 +3,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    background-color: rgb(131, 126, 127);
 }
 
 .joke {
@@ -18,7 +19,7 @@ h1 {
     display: flex;
     flex-direction: column;
     /* border: 1px black curvy; */
-    /* background-color: pink; */
+    background-color: pink;
     padding: 5px;
     text-align: center;
     font-weight: 600;
@@ -40,10 +41,7 @@ h1 {
     margin-bottom: 150px;
 }
 
-.answer {
-    color: white;
-    padding: 0 50px;
-}
+
 
 
 @media screen and (max-width:500px) {
@@ -57,6 +55,13 @@ h1 {
 
     h1 {
         color: blue;
+    }
+
+
+
+    .answer {
+        color: white;
+        padding: 0 50px;
     }
 
     .jokecontainer {
